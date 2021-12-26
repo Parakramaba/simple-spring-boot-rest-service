@@ -6,25 +6,23 @@ import lombok.Data;
 import javax.persistence.*;
 import java.util.List;
 
-@Data
 @Entity
-@Table(name = "students")
-public class Student {
+@Data
+@Table(name = "subjects")
+public class Subject {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
 
     @Column(nullable = false)
-    private String firstName;
+    private int code;
 
     @Column(nullable = false)
-    private String lastName;
+    private String name;
 
-    @Column(nullable = false, unique = true)
-    private String email;
-
-    @OneToMany(mappedBy = "student", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "subject")
     @JsonIgnore
-    private List<StudentExam> appliedExams;
+    private List<Exam> exams;
 
 }
