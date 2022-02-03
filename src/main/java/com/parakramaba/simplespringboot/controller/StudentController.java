@@ -33,8 +33,6 @@ public class StudentController {
         return studentService.getStudentById(id);
     }
 
-
-
     @GetMapping("/first-name")
     public ResponseEntity<?> getStudentsByFirstName(@RequestParam(name = "firstName") String firstName) throws ResourceNotFoundException {
         return studentService.getStudentsByFirstName(firstName);
