@@ -48,6 +48,29 @@
 			<artifactId>sonar-maven-plugin</artifactId>
 			<version>3.9.1.2184</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-pmd-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-pmd-plugin</artifactId>
+			<version>3.16.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.puppycrawl.tools/checkstyle -->
+		<dependency>
+			<groupId>com.puppycrawl.tools</groupId>
+			<artifactId>checkstyle</artifactId>
+			<version>10.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs -->
+		<dependency>
+			<groupId>com.github.spotbugs</groupId>
+			<artifactId>spotbugs</artifactId>
+			<version>4.7.0</version>
+			<type>pom</type>
+		</dependency>
+
 	</dependencies>
 
 	<build>

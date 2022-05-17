@@ -9,6 +9,9 @@ pipeline {
                 withSonarQubeEnv('sonarq1') {
                     bat 'mvn clean package sonar:sonar'
                 }
+                bat 'mvn pmd:pmd'
+                bat 'mvn checkstyle:checkstyle'
+                bat 'mvn spotbugs:spotbugs'
             }
         }
     }
