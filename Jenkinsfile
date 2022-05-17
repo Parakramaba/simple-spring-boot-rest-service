@@ -11,7 +11,7 @@ pipeline {
                 }
                 bat 'mvn pmd:pmd'
                 bat 'mvn checkstyle:checkstyle'
-                bat 'mvn spotbugs:spotbugs'
+                bat 'mvn site'
             }
         }
     }
