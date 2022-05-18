@@ -90,28 +90,28 @@
 				</configuration>
 			</plugin>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>3.1.2</version>
-				<configuration>
-<!--					<configLocation>checkstyle.xml</configLocation>-->
-					<encoding>UTF-8</encoding>
-<!--					<consoleOutput>true</consoleOutput>-->
-					<failsOnError>false</failsOnError>
-<!--					<outputFile>reports/checkstyle/checkstyle-report.xml</outputFile>-->
-<!--					<linkXRef>false</linkXRef>-->
-				</configuration>
-				<executions>
-					<execution>
-						<id>validate</id>
-						<phase>validate</phase>
-						<goals>
-							<goal>check</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-checkstyle-plugin</artifactId>-->
+<!--				<version>3.1.2</version>-->
+<!--				<configuration>-->
+<!--&lt;!&ndash;					<configLocation>checkstyle.xml</configLocation>&ndash;&gt;-->
+<!--					<encoding>UTF-8</encoding>-->
+<!--&lt;!&ndash;					<consoleOutput>true</consoleOutput>&ndash;&gt;-->
+<!--					<failsOnError>false</failsOnError>-->
+<!--&lt;!&ndash;					<outputFile>reports/checkstyle/checkstyle-report.xml</outputFile>&ndash;&gt;-->
+<!--&lt;!&ndash;					<linkXRef>false</linkXRef>&ndash;&gt;-->
+<!--				</configuration>-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<id>validate</id>-->
+<!--						<phase>validate</phase>-->
+<!--						<goals>-->
+<!--							<goal>check</goal>-->
+<!--						</goals>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--			</plugin>-->
 
 <!--			<plugin>-->
 <!--				<groupId>org.apache.maven.plugins</groupId>-->
