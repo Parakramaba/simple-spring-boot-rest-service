@@ -72,6 +72,7 @@
 <!--			<type>pom</type>-->
 <!--		</dependency>-->
 
+
 	</dependencies>
 
 	<build>
@@ -98,19 +99,38 @@
 					<encoding>UTF-8</encoding>
 <!--					<consoleOutput>true</consoleOutput>-->
 					<failsOnError>false</failsOnError>
-					<outputFile>reports/checkstyle/checkstyle.xml</outputFile>
+<!--					<outputFile>reports/checkstyle/checkstyle-report.xml</outputFile>-->
 <!--					<linkXRef>false</linkXRef>-->
 				</configuration>
+				<executions>
+					<execution>
+						<id>validate</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+<!--			<plugin>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-pmd-plugin</artifactId>-->
+<!--				<version>6.45.0</version> &lt;!&ndash; or use version from pluginManagement &ndash;&gt;-->
+<!--				<configuration>-->
+<!--					&lt;!&ndash; failOnViolation is actually true by default, but can be disabled &ndash;&gt;-->
+<!--					<failOnViolation>true</failOnViolation>-->
+<!--					&lt;!&ndash; printFailingErrors is pretty useful &ndash;&gt;-->
+<!--					<printFailingErrors>true</printFailingErrors>-->
+<!--				</configuration>-->
 <!--				<executions>-->
 <!--					<execution>-->
-<!--						<id>validate</id>-->
-<!--						<phase>validate</phase>-->
 <!--						<goals>-->
 <!--							<goal>check</goal>-->
 <!--						</goals>-->
 <!--					</execution>-->
 <!--				</executions>-->
-			</plugin>
+<!--			</plugin>-->
 
 		</plugins>
 	</build>
