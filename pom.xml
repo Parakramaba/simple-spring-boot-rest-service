@@ -49,30 +49,6 @@
 			<version>3.9.1.2184</version>
 		</dependency>
 
-<!--		&lt;!&ndash; https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-pmd-plugin &ndash;&gt;-->
-<!--		<dependency>-->
-<!--			<groupId>org.apache.maven.plugins</groupId>-->
-<!--			<artifactId>maven-pmd-plugin</artifactId>-->
-<!--			<version>3.16.0</version>-->
-<!--			<type>maven-plugin</type>-->
-<!--		</dependency>-->
-
-<!--		&lt;!&ndash; https://mvnrepository.com/artifact/com.puppycrawl.tools/checkstyle &ndash;&gt;-->
-<!--		<dependency>-->
-<!--			<groupId>com.puppycrawl.tools</groupId>-->
-<!--			<artifactId>checkstyle</artifactId>-->
-<!--			<version>10.2</version>-->
-<!--		</dependency>-->
-
-<!--		&lt;!&ndash; https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs &ndash;&gt;-->
-<!--		<dependency>-->
-<!--			<groupId>com.github.spotbugs</groupId>-->
-<!--			<artifactId>spotbugs</artifactId>-->
-<!--			<version>4.7.0</version>-->
-<!--			<type>pom</type>-->
-<!--		</dependency>-->
-
-
 	</dependencies>
 
 	<build>
@@ -89,49 +65,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-
-<!--			<plugin>-->
-<!--				<groupId>org.apache.maven.plugins</groupId>-->
-<!--				<artifactId>maven-checkstyle-plugin</artifactId>-->
-<!--				<version>3.1.2</version>-->
-<!--				<configuration>-->
-<!--&lt;!&ndash;					<configLocation>checkstyle.xml</configLocation>&ndash;&gt;-->
-<!--					<encoding>UTF-8</encoding>-->
-<!--&lt;!&ndash;					<consoleOutput>true</consoleOutput>&ndash;&gt;-->
-<!--					<failsOnError>false</failsOnError>-->
-<!--&lt;!&ndash;					<outputFile>reports/checkstyle/checkstyle-report.xml</outputFile>&ndash;&gt;-->
-<!--&lt;!&ndash;					<linkXRef>false</linkXRef>&ndash;&gt;-->
-<!--				</configuration>-->
-<!--				<executions>-->
-<!--					<execution>-->
-<!--						<id>validate</id>-->
-<!--						<phase>validate</phase>-->
-<!--						<goals>-->
-<!--							<goal>check</goal>-->
-<!--						</goals>-->
-<!--					</execution>-->
-<!--				</executions>-->
-<!--			</plugin>-->
-
-<!--			<plugin>-->
-<!--				<groupId>org.apache.maven.plugins</groupId>-->
-<!--				<artifactId>maven-pmd-plugin</artifactId>-->
-<!--				<version>6.45.0</version> &lt;!&ndash; or use version from pluginManagement &ndash;&gt;-->
-<!--				<configuration>-->
-<!--					&lt;!&ndash; failOnViolation is actually true by default, but can be disabled &ndash;&gt;-->
-<!--					<failOnViolation>true</failOnViolation>-->
-<!--					&lt;!&ndash; printFailingErrors is pretty useful &ndash;&gt;-->
-<!--					<printFailingErrors>true</printFailingErrors>-->
-<!--				</configuration>-->
-<!--				<executions>-->
-<!--					<execution>-->
-<!--						<goals>-->
-<!--							<goal>check</goal>-->
-<!--						</goals>-->
-<!--					</execution>-->
-<!--				</executions>-->
-<!--			</plugin>-->
-
 		</plugins>
 	</build>
 
