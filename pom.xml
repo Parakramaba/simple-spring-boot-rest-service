@@ -15,6 +15,7 @@
 	<description>Demo project to identify how spring boot works</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<checkstyle.config.location>checkstyle-custom.xml</checkstyle.config.location>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -74,16 +75,16 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>3.1.2</version>
-				<configuration>
-					<configLocation>checkstyle-custom.xml</configLocation>
-				</configuration>
-				<reportSets>
-					<reportSet>
-						<reports>
-							<report>checkstyle</report>
-						</reports>
-					</reportSet>
-				</reportSets>
+<!--				<configuration>-->
+<!--					<configLocation>checkstyle-custom.xml</configLocation>-->
+<!--				</configuration>-->
+<!--				<reportSets>-->
+<!--					<reportSet>-->
+<!--						<reports>-->
+<!--							<report>checkstyle</report>-->
+<!--						</reports>-->
+<!--					</reportSet>-->
+<!--				</reportSets>-->
 			</plugin>
 		</plugins>
 	</reporting>
